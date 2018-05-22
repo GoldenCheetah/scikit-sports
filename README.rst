@@ -1,21 +1,18 @@
-Scikit-cycling
-==============
+Scikit-sports
+=============
 
-.. image:: https://travis-ci.org/scikit-sports/scikit-sports.svg?branch=master
-    :target: https://travis-ci.org/scikit-sports/scikit-sports
-
-.. image:: https://ci.appveyor.com/api/projects/status/f2mvtb9y1mcy99vg?svg=true
+.. image:: https://travis-ci.org/GoldenCheetah/scikit-sports.svg?branch=master
+    :target: https://travis-ci.org/GoldenCheetah/scikit-sports
+             
+.. image:: https://ci.appveyor.com/api/projects/status/tei5gfnma8uxf7u8?svg=true
     :target: https://ci.appveyor.com/project/glemaitre/scikit-sports
 
 .. image:: https://readthedocs.org/projects/scikit-sports/badge/?version=latest
-    :target: http://scikit-sports.readthedocs.io/en/latest/?badge=latest
+    :target: https://scikit-sports.readthedocs.io/en/latest/?badge=latest
     :alt: Documentation Status
-
-.. image:: https://codecov.io/gh/scikit-sports/scikit-sports/branch/master/graph/badge.svg
-  :target: https://codecov.io/gh/scikit-sports/scikit-sports
-
-.. image:: https://badges.gitter.im/Join%20Chat.svg
-  :target: https://gitter.im/scikit-sports/Lobby?utm_source=share-link&utm_medium=link&utm_cam
+      
+.. image:: https://codecov.io/gh/GoldenCheetah/scikit-sports/branch/master/graph/badge.svg
+  :target: https://codecov.io/gh/GoldenCheetah/scikit-sports
 
 Installation
 ------------
@@ -23,7 +20,7 @@ Installation
 Dependencies
 ~~~~~~~~~~~~
 
-Scikit-cycling requires:
+Scikit-sports requires:
 
 * scipy
 * numpy

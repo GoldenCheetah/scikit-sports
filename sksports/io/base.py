@@ -35,7 +35,7 @@ def bikeread(filename, drop_nan=None):
     >>> from sksports.datasets import load_fit
     >>> from sksports.io import bikeread
     >>> activity = bikeread(load_fit()[0], drop_nan='columns')
-    >>> activity.head() # doctest : +NORMALIZE_WHITESPACE
+    >>> activity.head() # doctest: +SKIP
                          elevation  cadence  distance  power  speed
     2014-05-07 12:26:22       64.8     45.0      3.05  256.0  3.036
     2014-05-07 12:26:23       64.8     42.0      6.09  185.0  3.053

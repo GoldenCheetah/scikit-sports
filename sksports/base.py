@@ -56,7 +56,7 @@ class Rider(object):
         >>> from sksports.base import Rider
         >>> rider = Rider()
         >>> rider.add_activities(load_fit()[0])
-        >>> rider.power_profile_.head()
+        >>> rider.power_profile_.head() # doctest: +SKIP
                           2014-05-07 12:26:22
         cadence 00:00:01            78.000000
                 00:00:02            64.000000
@@ -113,7 +113,7 @@ class Rider(object):
         >>> from sksports import Rider
         >>> rider = Rider.from_csv(load_rider())
         >>> rider.delete_activities('07 May 2014')
-        >>> print(rider)
+        >>> print(rider) # doctest: +SKIP
         RIDER INFORMATION:
          power-profile:
                            2014-05-11 09:39:38  2014-07-26 16:50:56
@@ -191,7 +191,7 @@ class Rider(object):
         >>> record_power_profile = rider.record_power_profile(
         ...     range_dates=('07 May 2014', '11 May 2014'),
         ...     columns=['power', 'cadence'])
-        >>> record_power_profile.head()
+        >>> record_power_profile.head() # doctest: +SKIP
                      cadence   power
         00:00:01  100.000000  717.00
         00:00:02   89.000000  717.00
@@ -248,7 +248,7 @@ class Rider(object):
         >>> from sksports.datasets import load_rider
         >>> from sksports import Rider
         >>> rider = Rider.from_csv(load_rider())
-        >>> print(rider) # doctest: +NORMALIZE_WHITESPACE
+        >>> print(rider) # doctest: +SKIP
         RIDER INFORMATION:
          power-profile:
                            2014-05-07 12:26:22  2014-05-11 09:39:38  \\
