@@ -1,0 +1,55 @@
+.. currentmodule:: sksports
+
+.. _change_0_1:
+
+Version 0.1
+===========
+
+Changelog
+---------
+
+New features
+............
+
+Base
+
+- :class:`Rider` allows to store and easily manipulate power data of a
+  cyclist. By :user:`Guillaume Lemaitre <glemaitre>`.
+
+Datasets
+
+- :func:`datasets.load_fit` and :func:`datasets.load_rider` provides datasets
+  for `.fit` files and internal rider files, respectively. By :user:`Guillaume
+  Lemaitre <glemaitre>`.
+
+Extraction
+
+- :func:`extraction.activity_power_profile` allows to extract the power-profile
+  of an activity. By :user:`Guillaume Lemaitre <glemaitre>`.
+
+- :func:`extraction.acceleration`, :func:`extraction.gradient_elevation`, and
+  :func:`extraction.gradient_heart_rate` allows to extract the gradient of the
+  speed, elevation, and the heart-rate. By :user:`Guillaume Lemaitre
+  <glemaitre>`.
+
+- :func:`extraction.gradient_activity` allows to compute the gradient for all
+  available data for a given period. By :user:`Guillaume Lemaitre <glemaitre>`.
+
+Input/Output
+
+- :func:`bikeread` implement a common interface to read bike files. By
+  :user:`Guillaume Lemaitre <glemaitre>`.
+
+Metrics
+
+- :func:`metrics.std_dev_squared_error` computes the standard deviation of the
+  squared error when dealing with regression. By :user:`Guillaume Lemaitre
+  <glemaitre>`.
+
+- :func:`metrics.aerobic_meta_model` computes the aerobic model (MPA
+  mainly). By :user:`Guillaume Lemaitre <glemaitre>`.
+
+Model
+
+- :func:`strava_power_model` implements the method used in Strava for the
+  prediction of power from GPS data. By :user:`Guillaume Lemaitre <glemaitre>`.

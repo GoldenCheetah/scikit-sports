@@ -1,0 +1,8 @@
+scipy
+numpy
+pandas
+joblib
+scikit-learn
+fitparse
+six
+cython

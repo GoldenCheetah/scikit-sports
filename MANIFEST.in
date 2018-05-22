@@ -1,0 +1,2 @@
+include sksports/datasets/data/*.*
+include sksports/datasets/corrupted_data/*.*
