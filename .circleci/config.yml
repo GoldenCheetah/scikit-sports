@@ -1,0 +1,34 @@
+version: 2
+
+jobs:
+  python3:
+    docker:
+      - image: circleci/python:3.6.1
+    environment:
+      - MINICONDA_PATH: ~/miniconda
+      - CONDA_ENV_NAME: testenv
+      - PYTHON_VERSION: 3
+    steps:
+      - checkout
+      - run: ./build_tools/circle/checkout_merge_commit.sh
+      - run: ./build_tools/circle/build_doc.sh
+      - store_artifacts:
+          path: doc/_build/html
+          destination: doc
+      - store_artifacts:
+          path: ~/log.txt
+      - persist_to_workspace:
+          root: doc/_build/html
+          paths: .
+      - attach_workspace:
+          at: doc/_build/html
+      - run: ls -ltrh doc/_build/html
+    filters:
+      branches:
+        ignore: gh-pages
+
+workflows:
+  version: 2
+  build-doc:
+    jobs:
+      - python3
